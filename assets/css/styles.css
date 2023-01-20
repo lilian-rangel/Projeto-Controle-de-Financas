@@ -21,6 +21,35 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 10px;
+}
+
+.img-cabecalho {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img {
+    width: 70%;
+}
+
+.titulo-cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .resume {
