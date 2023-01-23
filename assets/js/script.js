@@ -12,8 +12,12 @@ const total = document.querySelector(".total");
 let items;
 
 btnNew.onclick = () => {
-    if (descItem.value === "" || amount.value === "" || type.value === "") {
-        return alert("Preencha todos os campos");
+
+    descriptionValidate();
+    amountValidate();
+
+    if(campos[0].value.length == "" || campos[1].value.length == "") {
+        return
     }
 
     items.push({
@@ -28,6 +32,7 @@ btnNew.onclick = () => {
 
     descItem.value = "";
     amount.value = "";
+    
 };
 
 // Funções 
@@ -97,3 +102,42 @@ const getItensBD = () => JSON.parse(localStorage.getItem("db_items")) ?? [];
 const setItensBD = () => localStorage.setItem("db_items", JSON.stringify(items));
 
 loadItens();
+
+
+
+// testes
+
+const campos = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".span-required");
+
+function setError(index){
+    campos[index].style.border = "2px solid #e63636";
+    spans[index].style.display = "block";
+}
+
+function removeError(index){
+    campos[index].style.border = "";
+    spans[index].style.display = "none";
+}
+
+function descriptionValidate() {
+    if(campos[0].value.length == "")
+    {
+        setError(0);
+    }
+    else
+    {
+        removeError(0);
+    }
+}
+
+function amountValidate(){
+    if(campos[1].value.length == "")
+    {
+        setError(1);
+   }
+    else
+    {
+        removeError(1);
+    }
+}

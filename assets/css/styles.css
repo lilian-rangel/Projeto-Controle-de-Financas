@@ -152,3 +152,53 @@ i {
     width: 80px;
     text-align: center;
 }
+
+
+.span-required{
+    font-size: 12px;
+    margin: 0 0 3px;
+    padding: 2px;
+    color: #9b2626;
+    display: none;
+}
+::placeholder {
+    text-align: center;
+    color: #918b8b;
+}
+
+@media screen and (max-width: 768px){
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-cabecalho {
+        font-size: 1.7rem;
+    }
+    .img-cabecalho {
+        order: 2;
+    }
+    .img-cabecalho img {
+        width: 50%;
+    }
+    .resume {
+        align-items: center;
+    }
+    .newItem {
+        flex-direction: column;
+        align-items: initial;
+    }
+    label, input, select {
+        text-align: center;
+    }
+    
+    
+}
+
+@media screen and (max-width: 576px) {
+    .titulo-cabecalho {
+        font-size: 1.5rem;
+    }
+    .resume {
+        flex-direction: column;
+    }
+}

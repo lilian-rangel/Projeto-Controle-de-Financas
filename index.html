@@ -36,11 +36,15 @@
         <div class="newItem">
             <div class="divDesc">
                 <label for="desc">Descrição</label>
-                <input type="text" id="desc" />
+                <input type="text" id="desc" class="required" placeholder="Digite a descrição" oninput="descriptionValidate()"/>
+                <span class="span-required">Preencha a descrição</span>
+
             </div>
             <div class="divAmount">
                 <label for="amount">Valor</label>
-                <input type="number" id="amount" />
+                <input type="number" id="amount" class="required" placeholder="Digite o valor" oninput="amountValidate()"/>
+                <span class="span-required">Preencha o valor</span>
+
             </div>
             <div class="divType">
                 <label for="type">Tipo</label>
@@ -49,7 +53,7 @@
                     <option>Saída</option>
                 </select>
             </div>
-            <button id="btnNew">Incluir</button>
+            <button id="btnNew" type="submit">Incluir</button>
         </div>
         <div class="divTable">
             <table>
