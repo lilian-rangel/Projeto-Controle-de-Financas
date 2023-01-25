@@ -3,7 +3,7 @@
 <hr>
 <h2 align="center">Sobre o projeto :dart:</h2>
 <p> Trata-se de um sistema gerenciador financeiro online pessoal fácil de usar, ideal para o controle das suas finanças. </p>
-<p>O projeto conta com as funções de adiconar e/ou excluir itens com seus devidos valores podendo ser uma entrada ou uma saída.</p>
+<p>O projeto conta com as funções de adicionar e/ou excluir itens com seus devidos valores podendo ser uma entrada ou uma saída.</p>
 <p>O objetivo é continuar aprendendo e praticando JavaScript.</p>
 
 <hr>
